@@ -4,46 +4,117 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NeckPet Support</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="wrap">
       <section class="hero">
         <h1>NeckPet Support / 技术支持</h1>
-        <p class="muted">Need help? Contact us and check common fixes below.</p>
+        <p class="muted">Need a hand? Find answers below or get in touch.</p>
       </section>
 
       <section class="card">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:daisy0822@hotmail.com">daisy0822@hotmail.com</a></p>
-        <p>Typical response time: 1-3 business days.</p>
+        <p>
+          Email:
+          <a href="mailto:daisy0822@hotmail.com">daisy0822@hotmail.com</a>
+        </p>
+        <p>Typical response time: 1–3 business days.</p>
       </section>
 
       <section class="card">
         <h2>FAQ (English)</h2>
-        <h3>PiP does not show in Simulator</h3>
-        <p>Some PiP behavior is limited in iOS Simulator. Test PiP on a real iPhone for accurate behavior.</p>
+        <h3>Why doesn't the floating window appear in the simulator?</h3>
+        <p>
+          Picture in Picture may behave differently in the iOS Simulator.
+          Check it on a physical iPhone.
+        </p>
 
-        <h3>Head tracking is not updating</h3>
-        <p>Make sure Motion & Fitness permission is enabled in iOS Settings for NeckPet. Also verify compatible headphones are connected for headphone mode.</p>
+        <h3>Posture tracking isn't updating</h3>
+        <p>
+          In your iPhone's Settings, make sure Motion & Fitness is enabled for
+          NeckPet. If you use headphone tracking, check that compatible
+          headphones are connected.
+        </p>
 
-        <h3>Purchase restore asks for Apple ID password</h3>
-        <p>This is expected behavior from Apple's restore flow on some devices.</p>
+        <h3>What's the circle with the NeckPet icon next to the Dynamic Island?</h3>
+        <p>
+          On iOS 26 and later, that's iOS's own indicator for NeckPet's background
+          session. It keeps posture tracking going while you use other apps. iOS
+          draws it and decides where it sits; NeckPet can't hide or restyle it.
+          Your pet appears in its own circle with a green (good posture) or yellow
+          (look up) ring. Tap End session in NeckPet to stop both.
+        </p>
+
+        <h3>Tracking stopped while I was in another app</h3>
+        <p>
+          iOS can end background time to save power, and tapping Stop on iOS's
+          indicator ends it too. Your session stays on: the Dynamic Island shows
+          “Open NeckPet for a new reading”, tracking continues while NeckPet is
+          open, and one tap on “Resume background tracking” turns background
+          tracking back on. Home → Connection log lists recent events, such as
+          headphones pausing motion, with their times.
+        </p>
+
+        <h3>I don't hear the reminder ding</h3>
+        <p>
+          In NeckPet, the ding plays only in headphones. In the background, the
+          reminder notification uses the same sound, so Silent mode, Focus and
+          Settings → Notifications → NeckPet → Sounds all apply. Banners appear at
+          most once a minute; the in-app buzz and ding can repeat every 15 seconds.
+        </p>
+
+        <h3>Does NeckPet drain my battery?</h3>
+        <p>
+          Continuous motion tracking uses some battery, a little more when it runs
+          in the background. End the session when you don't need it.
+        </p>
+
+        <h3>Why am I asked to sign in when restoring purchases?</h3>
+        <p>
+          Apple may ask you to sign in to verify your purchases.
+        </p>
       </section>
 
       <section class="card">
         <h2>常见问题（中文）</h2>
         <h3>为什么模拟器里 PiP 不稳定？</h3>
-        <p>iOS Simulator 对 PiP 支持有限，真实设备上的行为更准确。建议在真机测试。</p>
+        <p>
+          iOS Simulator 对 PiP 支持有限，真实设备上的行为更准确。建议在真机测试。
+        </p>
 
         <h3>为什么姿态检测没有变化？</h3>
-        <p>请在系统设置中确认 NeckPet 已开启“运动与健身”权限；耳机模式下请确认连接了兼容耳机。</p>
+        <p>
+          请在系统设置中确认 NeckPet 已开启“运动与健身”权限；耳机模式下请确认连接了兼容耳机。
+        </p>
+
+        <h3>灵动岛旁边带 NeckPet 图标的圆圈是什么？</h3>
+        <p>
+          在 iOS 26 及以上，这是 iOS 为 NeckPet 后台陪伴显示的系统指示器，它让你在使用其他 App 时也能继续检测姿势。它由 iOS 绘制并决定位置，NeckPet 无法隐藏或修改。你的宠物显示在自己的圆圈里：绿圈表示姿势良好，黄圈提醒你抬头。在 NeckPet 中点「停止陪伴」可同时关闭两者。
+        </p>
+
+        <h3>切到其他 App 后检测停了</h3>
+        <p>
+          iOS 可能为了省电收回后台时间，点系统指示器上的停止按钮也会结束后台陪伴。陪伴本身不会被关闭：灵动岛会显示「打开 NeckPet 更新姿势」，打开 NeckPet 时照常检测，点一下「继续后台陪伴」即可恢复后台检测。陪伴页的「连接记录」会列出最近的事件（例如耳机暂停发送动作数据）和时间。
+        </p>
+
+        <h3>听不到提醒的「叮」声</h3>
+        <p>
+          在 App 内，「叮」只在耳机里播放。在后台时，提醒通知使用同一个声音，因此会受静音模式、专注模式以及「设置 → 通知 → NeckPet → 声音」影响。通知横幅每分钟最多一条；App 内的震动和「叮」最快每 15 秒一次。
+        </p>
+
+        <h3>NeckPet 耗电吗？</h3>
+        <p>
+          持续检测姿势会消耗一些电量，后台运行时会稍多一点。不需要时请停止陪伴。
+        </p>
 
         <h3>恢复购买为什么会弹 Apple ID 密码？</h3>
-        <p>这是 Apple 恢复购买流程的常见行为，属于系统层面的正常提示。</p>
+        <p>
+          这是 Apple 恢复购买流程的常见行为，属于系统层面的正常提示。
+        </p>
       </section>
 
-      <p class="footer"><a href="./index.html">Back to Support Center</a></p>
+      <p class="footer"><a href="./index.html">Back to support</a></p>
     </main>
   </body>
 </html>
